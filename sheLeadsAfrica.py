@@ -57,7 +57,7 @@ test_data['Fare'] = test_data['Fare'].fillna(test_data['Fare'].mean())
 train_data.isnull().sum()
 
 test_data.isnull().sum()
-
+# carry out exploratory data analysis
 # find out the percentage of people that survived
 
 train_data.Survived.value_counts()/len(train_data)*100
@@ -68,7 +68,10 @@ sns.barplot(x='Sex', y= 'Survived', data = train_data)
 
 # a bar plot was made to show the class of passengers with the most survivors
 sns.barplot(x='Pclass', y= 'Survived', data = train_data)
-
+ 
+  
+# From the exploratory data analysis carried out, it can be seen that 38.38% of passengers survived
+# of which 70 percent were female and 30 percent were male.  We can also see that class one passengers that the highest number of survivors
 
 
 
